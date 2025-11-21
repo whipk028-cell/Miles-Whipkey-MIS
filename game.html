@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Miles Whipkey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Miles Whipkey</h1>
+            <p class="subtitle">Student at UMD</p>
+            <p class="location">📍 Duluth, Minnesota</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="game.html" class="active">Snake Game</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2024 Miles Whipkey</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+        <div class="game-container">
+            <div class="game-header">
+                <h2>Classic Snake Game</h2>
+                <div class="score-container">
+                    <span>Score: <span id="score">0</span></span>
+                    <span>High Score: <span id="highScore">0</span></span>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div class="controls">
+                <div class="instructions">
+                    <h3>How to Play:</h3>
+                    <p>Use the arrow keys to control the snake. Eat the red food to grow and increase your score. Avoid hitting the walls or yourself!</p>
+                    <div class="key-instructions">
+                        <span class="key">↑</span> <span class="key">↓</span> <span class="key">←</span> <span class="key">→</span>
+                    </div>
+                </div>
+                
+                <div class="game-buttons">
+                    <button id="startBtn" class="btn btn-primary">Start Game</button>
+                    <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+                    <button id="resetBtn" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="js/game.js"></script>
+    <!-- Start sound for the game -->
+    <audio id="startSound" src="files/retro-arcade-game-music-297305.mp3" preload="auto"></audio>
+</body>
+</html>

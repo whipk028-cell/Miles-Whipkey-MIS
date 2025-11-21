@@ -1,0 +1,1490 @@
+/* Professional Website Styles - Duluth Minnesota Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Elephant', serif;
+    color: #000000;
+}
+
+body {
+    background: #F0EAD6;
+    color: #000000;
+    min-height: 100vh;
+    line-height: 1.6;
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body::after {
+    display: none;
+}
+
+body::before {
+    display: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    background: #F0EAD6;
+    border-right: 2px solid #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 1.5rem;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000000;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #000000;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-family: 'Elephant', serif;
+    font-weight: bold;
+}
+
+.sidebar .subtitle {
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+    font-family: 'Elephant', serif;
+}
+
+.sidebar .location {
+    font-size: 0.85rem;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Elephant', serif;
+}
+
+.sidebar-nav {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Elephant', serif;
+    font-size: 0.9rem;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background: #000000;
+    color: #F0EAD6;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #000000;
+    padding-top: 1rem;
+}
+
+.sidebar-footer p {
+    color: #000000;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.sidebar-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sidebar-social a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    font-family: 'Elephant', serif;
+    font-size: 0.75rem;
+}
+
+.sidebar-social a:hover {
+    color: #F0EAD6;
+    background: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Main Content Typography */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    font-family: 'Elephant', serif;
+    color: #000000;
+}
+
+.main-content p {
+    font-family: 'Elephant', serif;
+    color: #000000;
+    line-height: 1.8;
+}
+
+/* Hero Section - Duluth Nature Inspired */
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    margin-bottom: 4rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    display: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Elephant', serif;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #000000;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    font-family: 'Elephant', serif;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Button Styles - Duluth Lake Superior Theme */
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2E8B57, #87CEEB);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(46, 139, 87, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #228B22, #4682B4);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(46, 139, 87, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #87CEEB;
+    border: 2px solid #87CEEB;
+    backdrop-filter: blur(15px);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #87CEEB, #2E8B57);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(135, 206, 235, 0.4);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #DC143C, #B22222);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #B22222, #8B0000);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(220, 20, 60, 0.4);
+}
+
+/* Features Section - Duluth Nature Cards */
+.features {
+    margin-bottom: 4rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: #F0EAD6;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    display: none;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: #F0EAD6;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 0 0 1px #000000;
+    border: 1px solid #000000;
+}
+
+.feature-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    font-family: 'Elephant', serif;
+}
+
+.feature-card p {
+    margin-bottom: 2rem;
+    color: #000000;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Elephant', serif;
+}
+
+.feature-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    font-family: 'Elephant', serif;
+}
+
+.feature-link:hover {
+    color: #F0EAD6;
+    background: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Styles - Duluth Lake Superior Theme */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+/* Responsive video embed */
+.video-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    border: 0;
+}
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.game-header {
+    text-align: center;
+    width: 100%;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.15), rgba(42, 82, 152, 0.1));
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    font-family: 'Arial', sans-serif;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+}
+
+#gameCanvas {
+    border: 4px solid #87CEEB;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 30px rgba(135, 206, 235, 0.4),
+        0 0 60px rgba(46, 139, 87, 0.2);
+    background: 
+        linear-gradient(135deg, #1a1a1a, #2a2a2a),
+        radial-gradient(circle at 30% 30%, rgba(135, 206, 235, 0.1) 0%, transparent 50%);
+}
+
+.controls {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.1), rgba(42, 82, 152, 0.05));
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+    margin-bottom: 2.5rem;
+}
+
+.instructions h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+}
+
+.instructions p {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-family: 'Arial', sans-serif;
+}
+
+.key-instructions {
+    margin-top: 1.5rem;
+}
+
+.key {
+    background: 
+        linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(46, 139, 87, 0.2));
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0 8px;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid rgba(135, 206, 235, 0.3);
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.2);
+}
+
+.game-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-buttons .btn {
+    min-width: 140px;
+}
+
+/* Footer Styles - Duluth Lake Superior Theme */
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.15), rgba(42, 82, 152, 0.1));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(135, 206, 235, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(152, 251, 152, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+footer p {
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link {
+    color: #87CEEB;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    background: rgba(135, 206, 235, 0.1);
+    border: 1px solid rgba(135, 206, 235, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #87CEEB, #2E8B57);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(135, 206, 235, 0.3);
+}
+
+/* Hobbies Page Styles */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin: 3rem 0;
+}
+
+.hobby-card {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.1), rgba(42, 82, 152, 0.05));
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+}
+
+.hobby-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(135, 206, 235, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(152, 251, 152, 0.05) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.hobby-card:hover::before {
+    opacity: 1;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.15), rgba(42, 82, 152, 0.1));
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hobby-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.hobby-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    font-family: 'Arial', sans-serif;
+}
+
+.hobby-card p {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Arial', sans-serif;
+}
+
+.hobby-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.detail-tag {
+    background: 
+        linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(46, 139, 87, 0.2));
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(135, 206, 235, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.detail-tag:hover {
+    background: linear-gradient(135deg, #87CEEB, #2E8B57);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.3);
+}
+
+.duluth-connection {
+    margin: 4rem 0;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)),
+        linear-gradient(45deg, rgba(30, 60, 114, 0.15), rgba(42, 82, 152, 0.1));
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.duluth-connection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(135, 206, 235, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(152, 251, 152, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.connection-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.connection-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    font-family: 'Arial', sans-serif;
+}
+
+.connection-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.duluth-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-item span:last-child {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: auto;
+        padding: 1rem;
+    }
+    
+    .sidebar-header {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .sidebar h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sidebar-nav {
+        margin-bottom: 1rem;
+    }
+    
+    .sidebar-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .sidebar-nav li {
+        margin-bottom: 0;
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .sidebar-nav a {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    .sidebar-footer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 1rem;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #gameCanvas {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .duluth-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-image {
+        height: 250px;
+    }
+    
+    .video-section {
+        padding: 1rem;
+    }
+    
+    .video-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Resume Page Styles */
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+}
+
+.resume-name {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.resume-title {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.resume-contact {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 2;
+    font-family: 'Elephant', serif;
+}
+
+.resume-contact p {
+    margin: 0.3rem 0;
+}
+
+.resume-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000000;
+    font-family: 'Elephant', serif;
+}
+
+.resume-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-title {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.item-subtitle {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 0.3rem;
+    font-family: 'Elephant', serif;
+}
+
+.item-location {
+    font-size: 1rem;
+    color: #000000;
+    font-style: italic;
+    font-family: 'Elephant', serif;
+}
+
+.item-description {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.7;
+    margin-top: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    font-size: 1.1rem;
+    color: #000000;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Elephant', serif;
+}
+
+.skill-list li:last-child {
+    border-bottom: none;
+}
+
+.resume-about {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Elephant', serif;
+}
+
+.resume-download {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #000000;
+}
+
+.resume-summary {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Elephant', serif;
+}
+
+.item-date {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.item-duties {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.item-duties li {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.7;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: 'Elephant', serif;
+}
+
+.item-duties li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.skill-list-full {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.skill-list-full li {
+    font-size: 1.1rem;
+    color: #000000;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Elephant', serif;
+}
+
+/* Career Page Styles */
+.career-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.career-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+}
+
+.career-header h1 {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.career-header p {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Elephant', serif;
+}
+
+.company-section {
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.company-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000000;
+}
+
+.company-name {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Elephant', serif;
+}
+
+.company-contact {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.company-contact p {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.8;
+    margin: 0.5rem 0;
+    font-family: 'Elephant', serif;
+}
+
+.company-link {
+    color: #000000;
+    text-decoration: underline;
+    font-family: 'Elephant', serif;
+}
+
+.company-link:hover {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.company-content {
+    margin-top: 2rem;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    border-left: 3px solid #000000;
+}
+
+.content-title {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.skills-alignment {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.skills-alignment li {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    font-family: 'Elephant', serif;
+}
+
+.skills-alignment li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Discover Page Styles */
+.discover-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.discover-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #000000;
+}
+
+.discover-header h1 {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.discover-header p {
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Elephant', serif;
+}
+
+.discover-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.discover-section .section-title {
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000000;
+    font-family: 'Elephant', serif;
+}
+
+.content-box {
+    margin-bottom: 2rem;
+}
+
+.content-box p {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    font-family: 'Elephant', serif;
+}
+
+.duluth-highlights-box,
+.campus-highlights-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.highlights-title {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Elephant', serif;
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights-list li {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    font-family: 'Elephant', serif;
+}
+
+.highlights-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.closing-box {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+
+.closing-text {
+    font-size: 1.4rem;
+    color: #000000;
+    line-height: 1.9;
+    font-style: italic;
+    font-family: 'Elephant', serif;
+    margin: 0;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Elephant', serif;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #000000;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #000000;
+    font-family: 'Elephant', serif;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Video Section Styles */
+.video-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #F0EAD6;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.video-title {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Elephant', serif;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    background: #000000;
+    margin-top: 1rem;
+}
+
+.discover-section .video-container {
+    margin-top: 1.5rem;
+}
+
+.youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
